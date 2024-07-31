@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="feed-checker.exe" version="1.3.0.3" publicKeyToken="403b30a2a47ae176" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="feed-checker.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="feed-checker" version="1.3.0.0" publicKeyToken="403B30A2A47AE176" language="neutral" processorArchitecture="msil" />
+    <commandLine file="feed-checker.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="feed-checker.exe" size="846152">
+      <assemblyIdentity name="feed-checker" version="1.3.0.0" publicKeyToken="403B30A2A47AE176" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PTVL8VeDvc6rdgKVU0rXocw8h5jQit75ACLN3RW564E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="feed-checker.exe.config" size="182">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>79H5r6/l8RkcZAxkUtsGUecmO0iMUJjXWlLtx3HjZrs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="feed-checker.ico" size="410598">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YDSbzspcdCJP/V1AJVnL+kOi2/SVO1ajDwV6IlYuiYc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=&quot;CN=coinpricefeeds.com/feed-checker/&quot;" issuerKeyHash="c4d4146624ec02bb557fe3483c3bfb6d592b1ac6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>cbk4zKZRGqr6iFgxss7mNRqnylg=</DigestValue></Reference></SignedInfo><SignatureValue>RDfo25SSsd/TUOgnUpkmVzqbs4R2WG9oOijTJPrNsC79w+4WE/PsxdCsDpLDPzWUMTXPMycFiNb0scu9UKVobkGhkV4WS7KNWAGscNwA4F9N216bmzTV5uxwPz9GtOiiMRLFH7S3dF4hZ8kqZxYWuff6KfhKe1tJDQXoC3xAEG8I+eW4UZj0+K4o30Xc58GWwNMTOba4OYJa+2CG3iX3ARWNPjg7hoS2Olf36ZcRCd6sHXQGDO/xcr4uZETeKHBabejfrs8F1flHzCYhM2hsF0YaSORKYYyVU+rr9fk8cpJI1OD4YCJQk68hALb8d1PlUnacYZBtevwHH8bhEFa5wQ==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wbaE86mSu6fBCrsh8+VFWuXBdC8htYavrh/Hr0UvWChGsKLWBYVEFz4BEHd0TZbns1u2ZFliW5CQyKJr+QMkPGxML/q6pVZx8Mz0xHjM3wzct13WFDvMWckjlIio/ERWHI0/JLW07bthAshRvmL6wNNYi5Jx9JpQ1UWaf5air5L6mpO9zU/Nd4ZsK0qGCGOo34kplXqORzDaambIF04jRcJWQX0//Ircs2pYhgm6Ohh5z7Fc3Gyq5bb+Hl1tAURyEDIKXme/l0Bt7bmYlG+yzjqYdi5Z91iice29UhCuLO/1R4mIvfA0QtezNsPshPxKQrxeGxkQWffgh3To1QP1yQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="58caa71a35e6ceb2315888faaa1a51a6cc38b971" Description="" Url=""><as:assemblyIdentity name="feed-checker.exe" version="1.3.0.3" publicKeyToken="403b30a2a47ae176" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN="CN=coinpricefeeds.com/feed-checker/"</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>EvGQa8NPdbhI4zQLKlWaU73Umn0=</DigestValue></Reference></SignedInfo><SignatureValue>gDBfe8uhbAofKBoq1Il2UORsVBd95Cb46J1XILBnB6onSak4pMRC5/nA8uqYAvnqpjdVexOtl/1/wy4CZjFly0c4htzHd45udbyv8TUuGiAmsN3kIQi11OdMde/uUGksHXvw0HWZyLfctwEv28H0ZHSv/oMJAp8pyTxN37HONDBtHWY+qCvMOqrJlkqyignomErT0JlpQFCZYJljvFRfdlekv3ta67dABg59OcGEq21mvmEV/2IZ6nOcuUH7HNW4Jh7eIsM3lGB0N/gPJy3ffUlw8xkFylUoFrBkFqpcRXbeYdMiKrWm204Ek+Ie+MgiErq8fQ5h06MjXULzbSEMXw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wbaE86mSu6fBCrsh8+VFWuXBdC8htYavrh/Hr0UvWChGsKLWBYVEFz4BEHd0TZbns1u2ZFliW5CQyKJr+QMkPGxML/q6pVZx8Mz0xHjM3wzct13WFDvMWckjlIio/ERWHI0/JLW07bthAshRvmL6wNNYi5Jx9JpQ1UWaf5air5L6mpO9zU/Nd4ZsK0qGCGOo34kplXqORzDaambIF04jRcJWQX0//Ircs2pYhgm6Ohh5z7Fc3Gyq5bb+Hl1tAURyEDIKXme/l0Bt7bmYlG+yzjqYdi5Z91iice29UhCuLO/1R4mIvfA0QtezNsPshPxKQrxeGxkQWffgh3To1QP1yQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIDEzCCAf+gAwIBAgIQa7uUGL25S5JJW0pZHYOf8jAJBgUrDgMCHQUAMBcxFTATBgNVBAMTDGxhdHlwb2ZmLmNvbTAeFw0yNDA3MzExMzM3NTdaFw0zOTEyMzEyMzU5NTlaMC4xLDAqBgNVBAMTI0NOPWNvaW5wcmljZWZlZWRzLmNvbS9mZWVkLWNoZWNrZXIvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwbaE86mSu6fBCrsh8+VFWuXBdC8htYavrh/Hr0UvWChGsKLWBYVEFz4BEHd0TZbns1u2ZFliW5CQyKJr+QMkPGxML/q6pVZx8Mz0xHjM3wzct13WFDvMWckjlIio/ERWHI0/JLW07bthAshRvmL6wNNYi5Jx9JpQ1UWaf5air5L6mpO9zU/Nd4ZsK0qGCGOo34kplXqORzDaambIF04jRcJWQX0//Ircs2pYhgm6Ohh5z7Fc3Gyq5bb+Hl1tAURyEDIKXme/l0Bt7bmYlG+yzjqYdi5Z91iice29UhCuLO/1R4mIvfA0QtezNsPshPxKQrxeGxkQWffgh3To1QP1yQIDAQABo0wwSjBIBgNVHQEEQTA/gBBCv8YSVWwW8TPzaVzgDTEqoRkwFzEVMBMGA1UEAxMMbGF0eXBvZmYuY29tghB3hLtliQ+PlEdmIjirR+GOMAkGBSsOAwIdBQADggEBAANa9Rw11997EqKjYxjlS6ozbsDhGTVVyMdhcrWraNRw75bdcoFAdw9N9lMKuK9aL1F5Di6S+dwqDZobiSHOXp34Fs9UHXyeSzJbSf1USVUTkgLV11yCIdM8EfC53IcUb5njsgleYknV9HFLU7csufpas1+baL6PfRTfCekk1y9ydoanqRUKdCs33jxsy2NjGPu73dufbJqGhsG4VZcGt2mxmpNn5pZ0Fmx2CFwiB17p8SKyS15kLaViQ/NgS7hCbJUPFNj9MS+DZAXKGLr4+r3zhebRm6g1qD8P2VrPGXqFvv8YbBbbr+uX8BGaP44EHosEE71XC4TTcXkq6+BI7vw=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
